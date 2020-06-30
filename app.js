@@ -1,5 +1,6 @@
 const express = require("express");
 const https = require("https");
+const port = process.env.PORT;
 
 const app = express();
 
@@ -32,6 +33,6 @@ app.get("/", function (req, res) {
     // res.send("server running");
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log("server listening...");
 });
